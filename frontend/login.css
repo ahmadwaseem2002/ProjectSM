@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Gradient background for a clean, modern look */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white for readability */
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Softer blur effect */
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.container h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #08b108; /* Vibrant green color for heading */
+}
+
+.container .text_input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.container .text_input input {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Lightly transparent white background */
+    border: none;
+    outline: none;
+    border: 2px solid rgb(146, 58, 112);
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 200;
+    font-size: medium;
+    color: #ffffff; /* White text for inputs */
+}
+
+.container .text_input input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Softer white for placeholders */
+}
+
+.container .text_input i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7); /* Icon color matches the placeholder */
+}
+
+.container .rember_forget {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.container .rember_forget a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: rgba(8, 233, 214, 0.8); /* Slightly brighter cyan for links */
+    transition: color 0.3s;
+}
+
+.container .rember_forget a:hover {
+    color: rgba(8, 233, 214, 1); /* Bright cyan on hover */
+}
+
+.container .btn1 {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    font-size: large;
+    color: #000;
+    background: #08b108; /* Vibrant green for the button */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.container .btn1:hover {
+    background: #067906; /* Darker green on hover */
+}
+
+.container .register {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register a {
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #11e96f; /* Bright green for register links */
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #0db958; /* Darker green on hover */
+}
+
+.register p {
+    font-weight: 200;
+    font-size: 1rem;
+    color: #ffffff; /* White for register description */
+    font-weight: 500;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(to right, #4ca1af, #2c3e50);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}

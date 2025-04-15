@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Talk Trail</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="welcome-container">
+        <h1 class="welcome-heading">Welcome to <span>Talk Trail</span></h1>
+        <p class="subheading">Connect, Chat, and Share Your Journey!</p>
+    </div>
+    
+    <div class="container">
+        <form action="/api/auth/register"  method="post">
+            <h1>Registration</h1>
+
+            <div class="text_input">
+                <input type="text" name="fname" placeholder="First Name" required>
+            </div>
+
+            <div class="text_input">
+                <input type="text" name="lname" placeholder="Last Name" required>
+            </div>
+
+            <div class="text_input">
+                <input type="text" name="Username" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="text_input">
+                <input type="email" name="emailaddress" placeholder="Email Address" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="text_input">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-key"></i>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

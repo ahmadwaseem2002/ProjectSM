@@ -1,11 +1,10 @@
-import { Database } from "../Connection.js"; // Import the Database connection file from Connection.js
+import { db } from "../Connection.js"; // Import the Database connection file from Connection.js
 import bcrypt from "bcrypt"; // Import bcrypt for password hashing
-import jwt from "jsonwebtoken"; // Import jsonwebtoken for creating tokens
+//import jwt from "jsonwebtoken"; // Import jsonwebtoken for creating tokens
 
 
-const db = Database(); // Create a new instance of the Database
 
-    const register = (req, res) => {
+ export   const register = (req, res) => {
 
         const q = "SELECT * FROM userdetails WHERE username=?";
         db.query(q, [req.body.username], (err, data) => {
